@@ -325,6 +325,8 @@ class _CalendarViewState extends State<_CalendarView> {
                 IconButton(
                   icon: widget.config.lastMonthIcon ??
                       const Icon(Icons.chevron_left),
+                  constraints: const BoxConstraints(),
+                  padding: const EdgeInsets.all(3),
                   color: controlColor,
                   tooltip: _isDisplayingFirstMonth
                       ? null
@@ -336,6 +338,8 @@ class _CalendarViewState extends State<_CalendarView> {
                 IconButton(
                   icon: widget.config.nextMonthIcon ??
                       const Icon(Icons.chevron_right),
+                  constraints: const BoxConstraints(),
+                  padding: const EdgeInsets.all(3),
                   color: controlColor,
                   tooltip: _isDisplayingLastMonth
                       ? null

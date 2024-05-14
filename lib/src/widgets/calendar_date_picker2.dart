@@ -37,7 +37,7 @@ const double _monthPickerRowHeight = 52.0;
 const double _monthPickerRowSpacing = 8.0;
 
 const double _subHeaderHeight = 52.0;
-const double _monthNavButtonsWidth = 108.0;
+const double _monthNavButtonsWidth = 60;
 
 class CalendarDatePicker2 extends StatefulWidget {
   CalendarDatePicker2({

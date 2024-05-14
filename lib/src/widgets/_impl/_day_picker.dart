@@ -309,8 +309,12 @@ class _DayPickerState extends State<_DayPicker> {
           dayWidget = InkResponse(
             focusNode: _dayFocusNodes[day - 1],
             onTap: () => widget.onChanged(dayToBuild),
-            radius: _dayPickerRowHeight / 2 + 4,
+            radius: _dayPickerRowHeight / 3,
             splashColor: daySplashColor,
+            containedInkWell: true,
+
+            hoverColor: Colors.transparent,
+            focusColor: Colors.transparent,
             child: Semantics(
               // We want the day of month to be spoken first irrespective of the
               // locale-specific preferences or TextDirection. This is because
